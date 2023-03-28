@@ -5,7 +5,7 @@ require_once 'Aluno.php';
 require_once 'Gestor.php';
 class PessoaFactory {
 
-    public function createPerson($nome,$telefone,$endereco, $type) {
+    public function criarPessoa($nome,$telefone,$endereco, $type) {
         switch($type) {
             case 'Aluno':
                 return new \Aluno($nome,$telefone,$endereco );
